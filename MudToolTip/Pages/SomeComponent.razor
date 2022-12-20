@@ -1,0 +1,12 @@
+﻿<MudTooltip Text="Hover me">
+    <MudIconButton OnClick=@SwitchBool Icon="@Icons.Material.Filled.QuestionMark" />
+</MudTooltip>
+
+@code {
+    private bool something = false;
+
+    private void SwitchBool()
+    {
+        something = !something;
+    }
+}
